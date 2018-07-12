@@ -1,0 +1,25 @@
+mybatis:
+ config-location: classpath:/config/mybatis-config.xml
+ mapperLocations: classpath:/mapper/*.xml
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    master:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.6.128:3306/cz_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: Root!123
+    slave:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://192.168.6.130:3306/cz_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+      username: root
+      password: Root!123
+#thymeleaf start
+  thymeleaf:
+    mode: HTML5
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+#开发时关闭缓存,不然没法看到实时页面
+    cache: false
+#thymeleaf end
