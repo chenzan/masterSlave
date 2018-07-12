@@ -1,7 +1,6 @@
 package com.cz.demo.controller;
 
 import com.cz.demo.bean.CzUser;
-import com.cz.demo.mapper.CzUserMapper;
 import com.cz.demo.service.CzUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
